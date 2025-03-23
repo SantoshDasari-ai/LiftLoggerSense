@@ -1,6 +1,6 @@
-# IMU Sensor Display with Touch Interface
+# IMU Sensor Display with Touch Interface and Workout Tracking
 
-This project combines an LCD display with touch functionality and a QMI8658C IMU sensor to create an interactive sensor data visualization application for ESP32.
+This project combines an LCD display with touch functionality and a QMI8658C IMU sensor to create both an interactive sensor data visualization application and a workout tracking system for ESP32.
 
 ## Features
 
@@ -9,6 +9,12 @@ This project combines an LCD display with touch functionality and a QMI8658C IMU
 - Visual representation of sensor data with charts
 - Temperature monitoring
 - Modern UI with color-coded panels
+- Workout tracking system with:
+  - Exercise selection (currently supporting bicep curls)
+  - Automatic rep counting using IMU motion detection
+  - Set tracking and history
+  - Workout summary statistics
+  - Multi-screen workout flow
 
 ## Hardware Requirements
 
@@ -47,6 +53,7 @@ idf.py -p [PORT] flash monitor
 ## Project Structure
 
 - `main/main.cpp`: Main application code combining LCD, touch, and IMU functionality
+- `main/workout_app.h` & `main/workout_app.cpp`: Workout tracking application with rep counting
 - `main/lv_conf.h`: LVGL configuration
 - `components/SensorLib`: Sensor library for QMI8658C IMU
 
@@ -56,6 +63,17 @@ idf.py -p [PORT] flash monitor
 - LVGL (Light and Versatile Graphics Library)
 - ESP LCD drivers
 - SensorLib component
+- Node.js packages (see package.json)
+
+## Workout Application
+
+The workout application features a multi-screen UI that allows users to:
+
+1. Start a new workout from the home screen
+2. Select exercise type (current implementation focuses on bicep curls)
+3. Track sets and reps with automatic rep detection using IMU sensor data
+4. View set summaries and overall workout statistics
+5. Navigate through the workout flow using an intuitive touch interface
 
 ## License
 

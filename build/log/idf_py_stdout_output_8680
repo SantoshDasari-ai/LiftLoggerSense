@@ -1,0 +1,61 @@
+[1/10] Performing build step for 'bootloader'
+[1/1] C:\Windows\system32\cmd.exe /C "cd /D C:\Users\dasar\OneDrive\Desktop\Engineering\rep_assistant\build\bootloader\esp-idf\esptool_py && C:\Users\dasar\.espressif\python_env\idf5.4_py3.11_env\Scripts\python.exe C:/Users/dasar/esp/v5.4/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 C:/Users/dasar/OneDrive/Desktop/Engineering/rep_assistant/build/bootloader/bootloader.bin"
+Bootloader binary size 0x5210 bytes. 0x2df0 bytes (36%) free.
+[2/10] No install step for 'bootloader'
+[3/10] Completed 'bootloader'
+[4/10] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/workout_app.cpp.obj
+[5/10] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/main.cpp.obj
+C:/Users/dasar/OneDrive/Desktop/Engineering/rep_assistant/main/main.cpp: In function 'esp_err_t app_i2c_init()':
+C:/Users/dasar/OneDrive/Desktop/Engineering/rep_assistant/main/main.cpp:256:5: warning: missing initializer for member 'i2c_config_t::clk_flags' [-Wmissing-field-initializers]
+  256 |     };
+      |     ^
+In file included from C:/Users/dasar/OneDrive/Desktop/Engineering/rep_assistant/main/main.cpp:20:
+C:/Users/dasar/OneDrive/Desktop/Engineering/rep_assistant/main/main.cpp: In function 'esp_err_t app_touch_init()':
+C:/Users/dasar/OneDrive/Desktop/Engineering/rep_assistant/managed_components/espressif__esp_lcd_touch_cst816s/include/esp_lcd_touch_cst816s.h:53:5: warning: missing initializer for member 'esp_lcd_panel_io_i2c_config_t::on_color_trans_done' [-Wmissing-field-initializers]
+   53 |     }
+      |     ^
+C:/Users/dasar/OneDrive/Desktop/Engineering/rep_assistant/main/main.cpp:303:56: note: in expansion of macro 'ESP_LCD_TOUCH_IO_I2C_CST816S_CONFIG'
+  303 |     const esp_lcd_panel_io_i2c_config_t tp_io_config = ESP_LCD_TOUCH_IO_I2C_CST816S_CONFIG();
+      |                                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/dasar/OneDrive/Desktop/Engineering/rep_assistant/managed_components/espressif__esp_lcd_touch_cst816s/include/esp_lcd_touch_cst816s.h:53:5: warning: missing initializer for member 'esp_lcd_panel_io_i2c_config_t::user_ctx' [-Wmissing-field-initializers]
+   53 |     }
+      |     ^
+C:/Users/dasar/OneDrive/Desktop/Engineering/rep_assistant/main/main.cpp:303:56: note: in expansion of macro 'ESP_LCD_TOUCH_IO_I2C_CST816S_CONFIG'
+  303 |     const esp_lcd_panel_io_i2c_config_t tp_io_config = ESP_LCD_TOUCH_IO_I2C_CST816S_CONFIG();
+      |                                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/dasar/OneDrive/Desktop/Engineering/rep_assistant/managed_components/espressif__esp_lcd_touch_cst816s/include/esp_lcd_touch_cst816s.h:53:5: warning: missing initializer for member 'esp_lcd_panel_io_i2c_config_t::lcd_param_bits' [-Wmissing-field-initializers]
+   53 |     }
+      |     ^
+C:/Users/dasar/OneDrive/Desktop/Engineering/rep_assistant/main/main.cpp:303:56: note: in expansion of macro 'ESP_LCD_TOUCH_IO_I2C_CST816S_CONFIG'
+  303 |     const esp_lcd_panel_io_i2c_config_t tp_io_config = ESP_LCD_TOUCH_IO_I2C_CST816S_CONFIG();
+      |                                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/dasar/OneDrive/Desktop/Engineering/rep_assistant/managed_components/espressif__esp_lcd_touch_cst816s/include/esp_lcd_touch_cst816s.h:53:5: warning: missing initializer for member 'esp_lcd_panel_io_i2c_config_t::<unnamed struct>::dc_low_on_data' [-Wmissing-field-initializers]
+   53 |     }
+      |     ^
+C:/Users/dasar/OneDrive/Desktop/Engineering/rep_assistant/main/main.cpp:303:56: note: in expansion of macro 'ESP_LCD_TOUCH_IO_I2C_CST816S_CONFIG'
+  303 |     const esp_lcd_panel_io_i2c_config_t tp_io_config = ESP_LCD_TOUCH_IO_I2C_CST816S_CONFIG();
+      |                                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/dasar/OneDrive/Desktop/Engineering/rep_assistant/managed_components/espressif__esp_lcd_touch_cst816s/include/esp_lcd_touch_cst816s.h:53:5: warning: missing initializer for member 'esp_lcd_panel_io_i2c_config_t::scl_speed_hz' [-Wmissing-field-initializers]
+   53 |     }
+      |     ^
+C:/Users/dasar/OneDrive/Desktop/Engineering/rep_assistant/main/main.cpp:303:56: note: in expansion of macro 'ESP_LCD_TOUCH_IO_I2C_CST816S_CONFIG'
+  303 |     const esp_lcd_panel_io_i2c_config_t tp_io_config = ESP_LCD_TOUCH_IO_I2C_CST816S_CONFIG();
+      |                                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/dasar/OneDrive/Desktop/Engineering/rep_assistant/main/main.cpp:326:5: warning: missing initializer for member 'esp_lcd_touch_config_t::process_coordinates' [-Wmissing-field-initializers]
+  326 |     };
+      |     ^
+C:/Users/dasar/OneDrive/Desktop/Engineering/rep_assistant/main/main.cpp:326:5: warning: missing initializer for member 'esp_lcd_touch_config_t::interrupt_callback' [-Wmissing-field-initializers]
+C:/Users/dasar/OneDrive/Desktop/Engineering/rep_assistant/main/main.cpp:326:5: warning: missing initializer for member 'esp_lcd_touch_config_t::user_data' [-Wmissing-field-initializers]
+C:/Users/dasar/OneDrive/Desktop/Engineering/rep_assistant/main/main.cpp:326:5: warning: missing initializer for member 'esp_lcd_touch_config_t::driver_data' [-Wmissing-field-initializers]
+C:/Users/dasar/OneDrive/Desktop/Engineering/rep_assistant/main/main.cpp: In function 'void button_task(void*)':
+C:/Users/dasar/OneDrive/Desktop/Engineering/rep_assistant/main/main.cpp:601:36: warning: unused variable 'workout_state' [-Wunused-variable]
+  601 |             extern workout_state_t workout_state;
+      |                                    ^~~~~~~~~~~~~
+[6/10] Linking C static library esp-idf\main\libmain.a
+[7/10] Generating ld/sections.ld
+[8/10] Linking CXX executable imu_display.elf
+FAILED: imu_display.elf 
+C:\Windows\system32\cmd.exe /C "cd . && C:\Users\dasar\.espressif\tools\xtensa-esp-elf\esp-14.2.0_20241119\xtensa-esp-elf\bin\xtensa-esp32s3-elf-g++.exe -mlongcalls  -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -fno-builtin-stpcpy -fno-builtin-strncpy -Wl,--cref -Wl,--defsym=IDF_TARGET_ESP32S3=0 -Wl,--Map=C:/Users/dasar/OneDrive/Desktop/Engineering/rep_assistant/build/imu_display.map -Wl,--no-warn-rwx-segments -Wl,--orphan-handling=warn -fno-rtti -fno-lto -Wl,--gc-sections -Wl,--warn-common -T esp32s3.peripherals.ld -T esp32s3.rom.ld -T esp32s3.rom.api.ld -T esp32s3.rom.bt_funcs.ld -T esp32s3.rom.libgcc.ld -T esp32s3.rom.wdt.ld -T esp32s3.rom.version.ld -T esp32s3.rom.newlib.ld -T memory.ld -T sections.ld @CMakeFiles\imu_display.elf.rsp -o imu_display.elf && cd ."
+C:/Users/dasar/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/ld.exe: esp-idf/main/libmain.a(main.cpp.obj):(.literal._ZL11button_taskPv+0x14): undefined reference to `current_screen'
+collect2.exe: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.
